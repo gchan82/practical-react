@@ -3,6 +3,7 @@ import './App.css';
 import {Body, Body2} from "./components/Body";
 import Header from "./components/Header";
 import Counter from "./components/Counter";
+import ImageSlider from "./components/ImageSlider";
 
 class App extends Component {
   add(a,b) {
@@ -18,8 +19,9 @@ class App extends Component {
             myFunc={this.add}
             ></Header>
             <Body myFunc={this.add} text="i am cool" text2="I am cool2"></Body>
-            <Counter intialCount={0}></Counter>
-            <Counter intialCount={10}></Counter>
+            <Counter initialCount={0}></Counter>
+            <Counter initialCount={10}></Counter>
+            <ImageSlider></ImageSlider>
           </p>
           <a
             className="App-link"
