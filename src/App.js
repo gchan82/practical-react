@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import './App.css';
 import {Body, Body2} from "./components/Body";
 import Header from "./components/Header";
+import Counter from "./components/Counter";
 
 class App extends Component {
   add(a,b) {
@@ -17,7 +18,8 @@ class App extends Component {
             myFunc={this.add}
             ></Header>
             <Body myFunc={this.add} text="i am cool" text2="I am cool2"></Body>
-            <Body2></Body2>
+            <Counter intialCount={0}></Counter>
+            <Counter intialCount={10}></Counter>
           </p>
           <a
             className="App-link"
