@@ -1,28 +1,7 @@
 import React, { Component } from 'react';
 import './App.css';
-
-const Body = (props) => (<div>
-  <p className="App-intro">{props.text}</p>
-  <p className="App-intro">{props.text2}</p>
-  <p className="App-intro">{props.myFunc(1,2)}</p>
-</div>);
-
-
-class Header extends Component {
-  render(){
-    return (
-<header className="App-header">
-            <h1 className="App-title">{this.props.title}</h1>
-            {this.props.num}
-            <div>
-            {JSON.stringify(this.props.myObj)}
-            {this.props.myArr[0]}
-            {this.props.myFunc(10,12)}
-            </div>
-        </header>
-    );
-  }
-}
+import {Body, Body2} from "./components/Body";
+import Header from "./components/Header";
 
 class App extends Component {
   add(a,b) {
@@ -38,6 +17,7 @@ class App extends Component {
             myFunc={this.add}
             ></Header>
             <Body myFunc={this.add} text="i am cool" text2="I am cool2"></Body>
+            <Body2></Body2>
           </p>
           <a
             className="App-link"
