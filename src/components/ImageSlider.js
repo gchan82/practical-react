@@ -29,7 +29,7 @@ export default class ImageSlider extends React.Component {
           idx: this.state.idx - 1
         });
       }}>previous</button>
-      <img style={{ width: 100, height: 100 }}
+      <img alt="something" style={{ width: 100, height: 100 } }
         src={this.state.images[this.state.idx]}
       />
       <button onClick={this.handleNext}>next</button>
