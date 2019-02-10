@@ -3,6 +3,7 @@ import './App.css';
 import ImageSlider from "./components/ImageSlider";
 import Counter from "./components/Counter";
 import Header from "./components/Header";
+import MyForm from "./components/MyForm";
 
 class App extends Component {
 
@@ -15,6 +16,7 @@ class App extends Component {
     if (this.state.whichComponentToShow === "ImageSlider") {
       return (
         <div className="App">
+          <MyForm />
           <ImageSlider />
           <button
             onClick={() => {
